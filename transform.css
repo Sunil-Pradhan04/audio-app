@@ -1,0 +1,38 @@
+.p{
+    height:200px;
+    width : 500px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+}
+.c1{
+    height:100%;
+    width : 50%;
+    background-color: rgb(19, 228, 78);
+    align-self: flex-end;
+}
+.c2{
+    height:100%;
+    width : 50%;
+    background-color: rgb(228, 36, 19);
+    align-self: flex-start;
+}
+/* .p .c1:hover{
+    align-self: flex-end;
+    background-color: blue;
+    transition: 2s;
+}
+.p .c1:hover ~ .c2{
+    align-self: flex-start;
+    background-color: aquamarine;
+    transition: 2s ease-in-out;
+    transform: rotate(360deg);
+
+} */
+/* .p .c1:not(:hover) ~ .c2{
+    align-self: flex-start;
+    background-color: aquamarine;
+    transition: 2s ease-in-out;
+    transform: rotate(-360deg);
+
+} */
