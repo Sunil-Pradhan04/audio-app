@@ -233,11 +233,18 @@ body{
 .audio{
     height: 300px;
     width : 270px;
-    background-color: blueviolet;
+    background-color: rgb(27, 24, 29);
     border-radius: 10px;
     text-align: center;
     margin : 0 6px 0 6px;
     box-shadow: inset 10px 10px 10px rgba(0,0,0,0.5);
+     border-radius: 20px;
+            box-shadow: 
+                10px 10px 30px rgba(255, 255, 255, 0.05),  /* Soft outer glow */
+                -10px -10px 30px rgba(0, 0, 0, 0.7),  /* Deep shadow */
+                inset 5px 5px 10px rgba(255, 255, 255, 0.1),  /* Inner highlight */
+                inset -5px -5px 10px rgba(0, 0, 0, 0.7);  /* Inner shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 .audio_logo{
@@ -334,6 +341,13 @@ body{
     scrollbar-width: none;
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+     border-radius: 20px;
+            box-shadow: 
+                10px 10px 30px rgba(255, 255, 255, 0.05),  /* Soft outer glow */
+                -10px -10px 30px rgba(0, 0, 0, 0.7),  /* Deep shadow */
+                inset 5px 5px 10px rgba(255, 255, 255, 0.1),  /* Inner highlight */
+                inset -5px -5px 10px rgba(0, 0, 0, 0.7);  /* Inner shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .type{
     position: relative;
