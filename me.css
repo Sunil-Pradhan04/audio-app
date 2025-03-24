@@ -1,0 +1,65 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #28293d);
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* About Me Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 80%;
+}
+
+/* Text Styling */
+.about-text {
+    max-width: 350px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff4b5c;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Links Styling */
+a {
+    color: #00c8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 3D Animation Container */
+#3d-container {
+    width: 300px;
+    height: 300px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 404 Animated Text */
+.error-text {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff4747;
+    text-shadow: 0 0 10px #ff4747, 0 0 20px #ff4747;
+    animation: float3D 3s infinite ease-in-out;
+    transform-style: preserve-3d;
+}
+
+/* Static "Server is not Reddy" */
+.message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #bbb;
+}
+
+/* Floating 3D Animation */
+@keyframes float3D {
+    0% { transform: rotateX(0deg) rotateY(0deg) translateY(0); }
+    50% { transform: rotateX(20deg) rotateY(20deg) translateY(-10px); }
+    100% { transform: rotateX(0deg) rotateY(0deg) translateY(0); }
+}
+
+/* Back to Home Button */
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #d83535;
+    transform: scale(1.1);
+}
