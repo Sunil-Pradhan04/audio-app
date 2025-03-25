@@ -57,6 +57,8 @@ video{
             inset 5px 5px 10px rgba(255, 255, 255, 0.1),  /* Inner highlight */
             inset -5px -5px 10px rgba(0, 0, 0, 0.7);  /* Inner shadow */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideln1 0.7s ease-in-out forwards;
+
 
 
 }
@@ -87,6 +89,8 @@ video{
             inset 5px 5px 10px rgba(255, 255, 255, 0.1),  /* Inner highlight */
             inset -5px -5px 10px rgba(0, 0, 0, 0.7);  /* Inner shadow */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideln1 0.7s ease-in-out forwards;
+
 
 
 }
@@ -166,5 +170,16 @@ video{
         width:80%;
         margin-top: 200px;
 
+    }
+}
+@keyframes slideln1{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+   
+    100%{
+        transform: scale(100%);
+        opacity: 1;
     }
 }
