@@ -168,6 +168,8 @@ body{
     border : 2px solid white;
     transition: all 1s ease;
     z-index: 2;
+    animation: slideln1 0.7s ease-in-out forwards;
+
 
     
 }
@@ -180,6 +182,8 @@ body{
     left: -7px;
     display: none;
     z-index: 1;
+    animation: slideln1 0.7s ease-in-out forwards;
+
 }
 .temp_img{
     position: absolute;
@@ -578,6 +582,17 @@ body{
     }
     to{
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideln1{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+   
+    100%{
+        transform: scale(100%);
         opacity: 1;
     }
 }
