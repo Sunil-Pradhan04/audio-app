@@ -179,6 +179,7 @@ back_btn.addEventListener("click", () => {
 });
 
 temp_img.addEventListener("click" , () =>{
+    phone_div.style.display = "none";
     main.style.display = "block";
     img.appendChild(clone);
     clone.style.height = "250px";
