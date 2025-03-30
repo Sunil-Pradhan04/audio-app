@@ -231,3 +231,18 @@ let al = document.querySelector(".al");
 al.innerHTML = `Hii ${You}`
 
 
+window.addEventListener("scroll" , () =>{
+    if(window.getComputedStyle(main).display !== "none"){
+    temp_img.innerHTML = "";
+    main.style.display = "none";
+    phone_div.style.display = "block";
+    let append = main.querySelector("clone")
+    temp_img.appendChild(clone);
+    clone.style.height = "60px";
+    clone.style.width = "60px";
+    clone.style.right = "10px";
+    clone.style.marginTop = "0px";
+    clone.style.marginLeft = "0px";  
+    }
+})
+
