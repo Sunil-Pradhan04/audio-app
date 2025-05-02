@@ -201,7 +201,14 @@ let user_name = localStorage.getItem(1); // Check if the name is already stored
 // If the name isn't stored yet, ask for it
 if (!user_name) {
   user_name = prompt("Enter your name: ");
-  
+  let voice1 = document.querySelector(".voice1");
+let message = document.querySelector(".message");
+
+message.addEventListener("click" , () =>{
+    console.log("Sunil");
+    voice1.play();
+    message.style.display = "none";
+})
   // Ensure the user entered a name
   if (user_name) {
     localStorage.setItem(1, user_name);  // Store the user's name permanently
@@ -217,14 +224,7 @@ console.log(You);
 let you = document.querySelector(".you")
 you.innerHTML = ` hii ${You} click me!`;
 
-let voice1 = document.querySelector(".voice1");
-let message = document.querySelector(".message");
 
-message.addEventListener("click" , () =>{
-    console.log("Sunil");
-    voice1.play();
-    message.style.display = "none";
-})
 let wel = document.querySelector(".wel");
 wel.innerHTML = `WELCOME "${You}"`
 let al = document.querySelector(".al");
