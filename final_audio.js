@@ -201,21 +201,30 @@ let user_name = localStorage.getItem(1); // Check if the name is already stored
 // If the name isn't stored yet, ask for it
 if (!user_name) {
   user_name = prompt("Enter your name: ");
-  let voice1 = document.querySelector(".voice1");
-let message = document.querySelector(".message");
 
-message.addEventListener("click" , () =>{
-    console.log("Sunil");
-    voice1.play();
-    message.style.display = "none";
-})
   // Ensure the user entered a name
   if (user_name) {
     localStorage.setItem(1, user_name);  // Store the user's name permanently
     localStorage.setItem("stop", "sunil"); // You can still use this for any other flag you want to set
   }
 } 
+// Check if message has been played before
+if (!localStorage.getItem("voice1_played")) {
+    let voice1 = document.querySelector(".voice1");
+    let message = document.querySelector(".message");
 
+    message.addEventListener("click", () => {
+        console.log("Sunil");
+        voice1.play();
+        message.style.display = "none";
+
+        // Mark voice1 as played
+        localStorage.setItem("voice1_played", "true");
+    });
+} else {
+    // Optionally hide the message button if already played
+    document.querySelector(".message").style.display = "none";
+}
 
 // console.log(`User Name: ${localStorage.getItem(1)}`);
 // console.log(stop: ${localStorage.getItem("stop")});
